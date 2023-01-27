@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preload" href="./images/bg01.jpg" as="image">
+    <title>Link In Bio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () =>{
+        VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color2: 0xff00f0,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 2.20 //thats much better now :D
+      })
+        setTimeout(() => {
+           const main = document.querySelector('main')
+           main.style.opacity= 1
+           main.style.filter = 'blur(0px)' 
+        }, 1000);
+    })
+</script>
+</head>
+<!-- Lets add Some Cool Stuf #Vanta  -->
+<body>
+    <div id="vanta"></div>
+    <main class="animated">
+        <header>
+            <img src="./images/Abdullah.jpg" alt="Abdullah's Image">
+            <h1>@Abdullah</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://abdullah-dev.tech">
+                    <img src="./images/homepage.svg" alt="Portfolio" width="20">
+                    Portfolio</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/abdullah.ramadan.7311/">
+                    <img src="./images/facebook.svg" alt="Facebook" width="20">
+                    Facebook</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Abdullah310a">
+                    <img src="./images/twitter.svg" alt="Twitter" width="20">
+                    
+                    Twitter</a>
+            </li>
+            <li>
+                <a href="https://github.com/Abdullahali310">
+                    <img src="./images/github.svg" alt="Github" width="20">
+                    
+                    Github</a>
+            </li>
+            <li>
+                <a href="https://instagram.com/_._3bdullah">
+                    <img src="./images/instagram.svg" alt="Instagram" width="20">
+                    
+                    Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/abdullah-ramadan2/">
+                    <img src="./images/linkedin.svg" alt="LinkedIn" width="20">
+                    
+                    LinkedIn</a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
+
